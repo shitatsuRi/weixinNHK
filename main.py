@@ -30,7 +30,7 @@ def main(date_=None):
             media_url = wechat.upload_image(file_name=media_name, server_name=f"{key}.jpg")
         # # 如果上传不成功，或者没有图片，就用通用封面
         # if not media_id:
-        #     media_id = "Jms241ibC-PJB2pIMrCi3z3hW2IiSzYJYIbCOte0_3VoTzX6G4UHS3wZ79Rblo3H"
+        #     media_id = ""
         title = re.sub(r"\(.*?\)|\[|\]", "", value["title"])
         content = (
             (f"<h1>{value['title']}</h1>"+f"<img src='{media_url}'>"+value["news_body_text"])
@@ -42,7 +42,7 @@ def main(date_=None):
             "title":title[:10]+"...",
             "author":"kitab",
             "content":content,
-            "thumb_media_id":"Jms241ibC-PJB2pIMrCi31FOGSjmirmVAGZQtEgfepKDozKzv3CimFGmRpstVxdn",
+            "thumb_media_id":"",
         }
         articles.append(article)
     # print(articles)
