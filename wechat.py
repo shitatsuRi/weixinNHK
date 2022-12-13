@@ -4,7 +4,7 @@ import json
 import os
 
 class WeChat():
-    def __init__(self, appid="wx020914786bb66a54", app_secret="4093e323ba1850cf50a077592aafb709") -> None:
+    def __init__(self, appid="", app_secret="") -> None:
         self.appid = appid
         self.secret = app_secret   
         self.token = None     
